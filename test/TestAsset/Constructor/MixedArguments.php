@@ -6,7 +6,10 @@ namespace LaminasTest\Di\TestAsset\Constructor;
 
 class MixedArguments
 {
-    /** @param null|mixed $anyDep */
+    /**
+     * @psalm-suppress PossiblyUnusedParam
+     * @param null|mixed $anyDep
+     */
     public function __construct(NoConstructor $objectDep, $anyDep = null)
     {
     }

@@ -421,4 +421,161 @@
       <code>stringType</code>
     </MissingReturnType>
   </file>
+    <file src="src/DefaultContainer.php">
+        <MethodSignatureMustProvideReturnType occurences="1">
+            <code>has</code>
+        </MethodSignatureMustProvideReturnType>
+        <MethodSignatureMustProvideReturnType occurrences="1">
+            <code>get</code>
+        </MethodSignatureMustProvideReturnType>
+    </file>
+    <file src="test/CodeGenerator/AbstractInjectorTest.php">
+        <UnusedMethodCall occurrences="2">
+            <code>testFactoryIsCreatedFromClassNameString</code>
+        </UnusedMethodCall>
+    </file>
+    <file src="test/CodeGenerator/GeneratorTraitTest.php">
+        <DeprecatedMethod occurrences="1">
+            <code>testEnsureDirectoryGivenInvalidDirectoryNameExpectedErrorMessageContainInvalidDirectoryName</code>
+        </DeprecatedMethod>
+    </file>
+    <file src="test/Container/ConfigFactoryTest.php">
+        <DeprecatedMethod occurrences="1">
+            <code>testLegacyConfigTriggersDeprecationNotice</code>
+        </DeprecatedMethod>
+    </file>
+    <file src="test/Container/GeneratorFactoryTest.php">
+        <UnusedMethodCall occurrences="2">
+            <code>testDefaultLogger</code>
+            <code>testSetsLoggerFromConfig</code>
+        </UnusedMethodCall>
+    </file>
+    <file src="test/Container/InjectorFactoryTest.php">
+        <UnusedMethodCall occurrences="1">
+            <code>testUsesConfigServiceFromContainer</code>
+        </UnusedMethodCall>
+    </file>
+    <file src="test/LegacyConfigTest.php">
+        <DeprecatedMethod occurrences="1">
+            <code>testFQParamNamesTriggerDeprecated</code>
+        </DeprecatedMethod>
+    </file>
+    <file src="test/Resolver/AbstractInjectionTest.php">
+        <DeprecatedMethod occurrences="2">
+            <code>testUsageIsDeprecated</code>
+        </DeprecatedMethod>
+    </file>
+    <file src="test/Resolver/TypeInjectionTest.php">
+        <DeprecatedMethod occurrences="1">
+            <code>testGetTypeIsDeprectaed</code>
+        </DeprecatedMethod>
+    </file>
+    <file src="test/Resolver/ValueInjectionTest.php">
+        <DeprecatedMethod occurrences="1">
+            <code>testGetValueTriggersDeprecatedNotice</code>
+        </DeprecatedMethod>
+    </file>
+    <file src="test/TestAsset/BuiltinTypehintParameters.php">
+        <PossiblyUnusedParam occurrences="2">
+            <code>callableType</code>
+            <code>arrayType</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/CircularClasses/A.php">
+        <PossiblyUnusedParam occurrences="1">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/CircularClasses/B.php">
+        <PossiblyUnusedParam occurrences="1">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/CircularClasses/C.php">
+        <PossiblyUnusedParam occurrences="1">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/CircularClasses/D.php">
+        <PossiblyUnusedParam occurrences="1">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/CircularClasses/E.php">
+        <PossiblyUnusedParam occurrences="1">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/CircularClasses/X.php">
+        <PossiblyUnusedParam occurrences="1">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/CircularClasses/Y.php">
+        <PossiblyUnusedParam occurrences="1">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/ClassDefinitionRedundantUaSortTestDependency.php">
+        <PossiblyUnusedParam occurrences="2">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/Config/SomeClass.php">
+        <PossiblyUnusedParam occurrences="2">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/Constructor/MixedArguments.php">
+        <PossiblyUnusedParam occurrences="2">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/Constructor/OptionalArguments.php">
+        <PossiblyUnusedParam occurrences="2">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/Constructor/Php7.php">
+        <PossiblyUnusedParam occurrences="3">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/Constructor/RequiredArguments.php">
+        <PossiblyUnusedParam occurrences="3">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/IterableDependency.php">
+        <PossiblyUnusedParam occurrences="1">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/Parameters.php">
+        <PossiblyUnusedParam occurrences="7">
+            <code>general</code>
+            <code>typehintRequired</code>
+            <code>typelessRequired</code>
+            <code>typehintOptional</code>
+            <code>typelessOptional</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/RequiresA.php">
+        <PossiblyUnusedParam occurrences="1">
+            <code>__construct</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/Resolver/ExportableValue.php">
+        <PossiblyUnusedParam occurrences="1">
+            <code>__set_state</code>
+        </PossiblyUnusedParam>
+    </file>
+    <file src="test/TestAsset/ScalarTypehintParameters.php">
+        <PossiblyUnusedParam occurrences="4">
+            <code>intType</code>
+            <code>boolType</code>
+            <code>stringType</code>
+            <code>floatType</code>
+        </PossiblyUnusedParam>
+    </file>
 </files>

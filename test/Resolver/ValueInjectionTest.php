@@ -171,6 +171,9 @@ class ValueInjectionTest extends TestCase
         $this->assertNotEquals('', $result, 'The exported value must not be empty');
     }
 
+    /**
+     * @psalm-suppress DeprecatedMethod
+     */
     public function testGetValueTriggersDeprecatedNotice()
     {
         $value   = uniqid();

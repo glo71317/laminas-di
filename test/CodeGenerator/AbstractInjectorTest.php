@@ -174,6 +174,9 @@ class AbstractInjectorTest extends TestCase
         $this->assertSame($expected, $subject->create($className));
     }
 
+    /**
+     * @psalm-suppress UnusedMethodCall
+     */
     public function testFactoryIsCreatedFromClassNameString(): void
     {
         $subject = $this->createTestSubject(static fn(): array => ['SomeClass' => StdClassFactory::class]);

@@ -7,6 +7,7 @@ namespace LaminasTest\Di\TestAsset\Constructor;
 class OptionalArguments
 {
     /**
+     * @psalm-suppress PossiblyUnusedParam
      * @param null|string $foo
      * @param string      $bar
      */

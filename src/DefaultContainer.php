@@ -55,6 +55,7 @@ class DefaultContainer implements ContainerInterface
      * @see ContainerInterface::has()
      *
      * @param string $name
+     * @psalm-suppress MethodSignatureMustProvideReturnType
      * @return bool
      */
     public function has($name)
@@ -78,6 +79,7 @@ class DefaultContainer implements ContainerInterface
      * @see ContainerInterface::get()
      *
      * @param string $name
+     * @psalm-suppress MethodSignatureMustProvideReturnType
      * @return object
      */
     public function get($name)

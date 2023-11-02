@@ -38,6 +38,9 @@ class InjectorFactoryTest extends TestCase
         $this->assertInstanceOf(InjectorInterface::class, $result);
     }
 
+    /**
+     * @psalm-suppress UnusedMethodCall
+     */
     public function testUsesConfigServiceFromContainer()
     {
         $container  = $this->getMockBuilder(ContainerInterface::class)->getMockForAbstractClass();

@@ -10,6 +10,9 @@ use PHPUnit\Framework\TestCase;
 
 final class GeneratorTraitTest extends TestCase
 {
+    /**
+     * @psalm-suppress DeprecatedMethod
+     */
     public function testEnsureDirectoryGivenInvalidDirectoryNameExpectedErrorMessageContainInvalidDirectoryName(): void
     {
         $invalidDir = 'http://www.invalid-directory';

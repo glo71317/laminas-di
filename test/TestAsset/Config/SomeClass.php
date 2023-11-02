@@ -9,6 +9,9 @@ use LaminasTest\Di\TestAsset\B;
 
 class SomeClass
 {
+    /**
+     * @psalm-suppress PossiblyUnusedParam
+     */
     public function __construct(A $a, B $b)
     {
     }

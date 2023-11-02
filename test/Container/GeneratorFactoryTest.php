@@ -84,6 +84,9 @@ class GeneratorFactoryTest extends TestCase
         $this->assertEquals($expected, $generator->getNamespace());
     }
 
+    /**
+     * @psalm-suppress UnusedMethodCall
+     */
     public function testDefaultLogger(): void
     {
         $generator  = (new GeneratorFactory())->create(new ServiceManager());
@@ -94,6 +97,9 @@ class GeneratorFactoryTest extends TestCase
         $this->assertInstanceOf(NullLogger::class, $property->getValue($generator));
     }
 
+    /**
+     * @psalm-suppress UnusedMethodCall
+     */
     public function testSetsLoggerFromConfig(): void
     {
         $logger    = $this->getMockBuilder(LoggerInterface::class)

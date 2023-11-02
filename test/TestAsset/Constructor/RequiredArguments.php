@@ -8,7 +8,10 @@ use ArrayAccess;
 
 class RequiredArguments
 {
-    /** @param mixed $anyDep */
+    /**
+     * @psalm-suppress PossiblyUnusedParam
+     * @param mixed $anyDep
+     */
     public function __construct(NoConstructor $objectDep, ArrayAccess $internalClassDep, $anyDep)
     {
     }

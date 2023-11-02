@@ -12,6 +12,9 @@ use function sprintf;
 
 class AbstractInjectionTest extends TestCase
 {
+    /**
+     * @psalm-suppress DeprecatedMethod
+     */
     public function testUsageIsDeprecated(): void
     {
         $this->expectDeprecation();

@@ -50,6 +50,9 @@ class LegacyConfigTest extends TestCase
         $this->assertEquals($expected, $instance->toArray());
     }
 
+    /**
+     * @psalm-suppress DeprecatedMethod
+     */
     public function testFQParamNamesTriggerDeprecated(): void
     {
         $this->expectDeprecation();

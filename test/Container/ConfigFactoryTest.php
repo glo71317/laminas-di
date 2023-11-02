@@ -126,6 +126,9 @@ class ConfigFactoryTest extends TestCase
         $this->assertEquals($expectedPreference, $result->getTypePreference('SomeDependency'));
     }
 
+    /**
+     * @psalm-suppress DeprecatedMethod
+     */
     public function testLegacyConfigTriggersDeprecationNotice(): void
     {
         $container = $this->createContainerWithConfig([

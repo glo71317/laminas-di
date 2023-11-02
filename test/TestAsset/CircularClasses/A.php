@@ -6,6 +6,9 @@ namespace LaminasTest\Di\TestAsset\CircularClasses;
 
 class A
 {
+    /**
+     * @psalm-suppress PossiblyUnusedParam
+     */
     public function __construct(B $b)
     {
     }

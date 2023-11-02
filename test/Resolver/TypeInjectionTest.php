@@ -62,6 +62,9 @@ class TypeInjectionTest extends TestCase
         $this->assertTrue((new TypeInjection($typeName))->isExportable());
     }
 
+    /**
+     * @psalm-suppress DeprecatedMethod
+     */
     public function testGetTypeIsDeprectaed()
     {
         $subject = new TypeInjection('SomeType');

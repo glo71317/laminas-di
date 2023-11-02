@@ -9,25 +9,38 @@ class Parameters
     /**
      * @param mixed  $a
      * @param string $c
+     * @psalm-suppress PossiblyUnusedParam
      */
     public function general($a, B $b, $c = 'something')
     {
     }
 
+    /**
+     * @psalm-suppress PossiblyUnusedParam
+     */
     public function typehintRequired(A $foo)
     {
     }
 
-    /** @param mixed $bar */
+    /**
+     * @psalm-suppress PossiblyUnusedParam
+     * @param mixed $bar
+     */
     public function typelessRequired($bar)
     {
     }
 
+    /**
+     * @psalm-suppress PossiblyUnusedParam
+     */
     public function typehintOptional(?A $fooOpt = null)
     {
     }
 
-    /** @param bool $flag */
+    /**
+     * @psalm-suppress PossiblyUnusedParam
+     * @param bool $flag
+     */
     public function typelessOptional($flag = false)
     {
     }

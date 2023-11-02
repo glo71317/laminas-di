@@ -6,7 +6,10 @@ namespace LaminasTest\Di\TestAsset\Resolver;
 
 class ExportableValue
 {
-    /** @param mixed $data */
+    /**
+     * @psalm-suppress PossiblyUnusedParam
+     * @param mixed $data
+     */
     public static function __set_state($data)
     {
     }
